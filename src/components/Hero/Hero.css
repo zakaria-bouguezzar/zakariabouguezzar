@@ -1,0 +1,53 @@
+/* Hero Section */
+.hero-parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.1);
+    transition: transform 10s ease-out;
+    height: 100%;
+    width: 100%;
+  }
+  
+  section:hover .hero-parallax {
+    transform: scale(1.15);
+  }
+  
+  /* Smooth typography */
+  h1 {
+    font-family: 'Inter', sans-serif;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  p {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Button hover effect */
+  button {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+  }
+  
+  button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  /* Ensure picture element fills the section */
+  picture {
+    height: 100%;
+    width: 100%;
+  }

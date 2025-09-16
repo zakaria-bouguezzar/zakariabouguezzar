@@ -1,0 +1,32 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slideInLeft {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+  
+.animate-slideInLeft {
+  animation: slideInLeft 1s ease-in-out forwards;
+}
+
+.animate-bounceIn {
+  animation: bounceIn 1s ease-in-out forwards;
+}
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  display: inline-block;
+  animation: blink 1s infinite;
+}
