@@ -11,29 +11,21 @@ function App() {
   return (
     <Router>
       <div className="App">
-        
-
         <Routes>
-          {/* Homepage */}
+          {/* One single page with all sections */}
           <Route
-            path="/"
+            path="/portfolio"
             element={
               <div>
-                
                 <Hero />
-                <Services/>
-                <Portfolio/>
-                <Skills/>
-                <Contact/>
-
-                
-               
+                <Services />
+                <Portfolio />
+                <Skills />
+                <Contact />
                 <Footer />
               </div>
             }
           />
-
-          
         </Routes>
       </div>
     </Router>
