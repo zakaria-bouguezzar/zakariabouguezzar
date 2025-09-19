@@ -9,21 +9,25 @@ const Portfolio = () => {
     {
       id: 1,
       image: portfolio1,
+      type: "Web development",
       title: "Morocco Travel Guide",
     },
     {
       id: 2,
       image: portfolio2,
+      type: "Applications",
       title: "Restaurant Management",
     },
     {
       id: 3,
       image: portfolio3,
+      type: "Web development",
       title: "Construction Company",
     },
     {
       id: 4,
       image: portfolio4,
+      type: "Web development",
       title: "GameSetup Hub",
     },
   ];
@@ -50,6 +54,7 @@ const Portfolio = () => {
             />
             <div className="p-4">
               <h3 className="text-lg font-semibold">{project.title}</h3>
+              <p className="text-sm text-gray-500 mt-1">{project.type}</p>
             </div>
           </div>
         ))}
